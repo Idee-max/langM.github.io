@@ -187,4 +187,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* ══════════════════════════════════════════════════
+     8. THEME SWITCHER
+     ══════════════════════════════════════════════════ */
+  const themeToggle = document.getElementById('themeToggle');
+  const htmlElement = document.documentElement;
+
+  function setTheme(theme) {
+    htmlElement.setAttribute('data-theme', theme);
+    try { localStorage.setItem('theme', theme); } catch(e) {}
+  }
+
+  themeToggle.addEventListener('click', () => {
+    const currentTheme = htmlElement.getAttribute('data-theme') || 'dark';
+    setTheme(currentTheme === 'light' ? 'dark' : 'light');
+  });
+
+  // Restore saved theme (default: dark)
+  let savedTheme = 'dark';
+  try { savedTheme = localStorage.getItem('theme') || 'dark'; } catch(e) {}
+  setTheme(savedTheme);
+
 });
