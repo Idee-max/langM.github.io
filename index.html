@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-CN" id="htmlRoot">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="pageTitle">明朗 | 哲学博士候选人</title>
+  <meta name="description" id="metaDesc" content="明朗（Lang Ming）的个人学术主页。斯图加特大学与雅典大学联合哲学博士候选人。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&family=Noto+Serif+SC:wght@300;400;500;600&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <span class="lang-cn">明朗</span>
+        <span class="lang-en">Lang Ming</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"         class="nav-link"><span class="lang-cn">关于</span><span class="lang-en">About</span></a></li>
+        <li><a href="#research"      class="nav-link"><span class="lang-cn">当前研究</span><span class="lang-en">Research</span></a></li>
+        <li><a href="#publications"  class="nav-link"><span class="lang-cn">论著</span><span class="lang-en">Publications</span></a></li>
+        <li><a href="#teaching"      class="nav-link"><span class="lang-cn">教学</span><span class="lang-en">Teaching</span></a></li>
+        <li><a href="#presentations" class="nav-link"><span class="lang-cn">学术报告</span><span class="lang-en">Presentations</span></a></li>
+        <li class="cn-only"><a href="#essays" class="nav-link">生活随笔</a></li>
+        <li><a href="#contact"       class="nav-link"><span class="lang-cn">联系</span><span class="lang-en">Contact</span></a></li>
+      </ul>
+      <!-- Language Switcher -->
+      <div class="lang-switcher">
+        <button class="lang-btn active" id="btnCn">中文</button>
+        <span class="lang-sep">/</span>
+        <button class="lang-btn" id="btnEn">En</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-photo-wrap">
+        <img src="avatar.png" alt="明朗 Lang Ming" class="hero-photo" id="heroPhoto" />
+        <div class="hero-photo-ring"></div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-label">
+          <span class="lang-cn">哲学博士候选人</span>
+          <span class="lang-en">PhD Candidate in Philosophy</span>
+        </p>
+        <h1 class="hero-name">
+          <span class="lang-cn">明 <span class="accent">朗</span></span>
+          <span class="lang-en">Lang <span class="accent">Ming</span></span>
+        </h1>
+        <p class="hero-institution">
+          <span class="lang-cn">斯图加特大学 &amp; 雅典大学</span>
+          <span class="lang-en">University of Stuttgart &amp; University of Athens</span>
+        </p>
+        <p class="hero-bio lang-cn">
+          我的博士研究聚焦于黑格尔哲学，探讨其逻辑学与实在哲学的内在关联，
+          并尝试借助当代科学基础概念来更新黑格尔式的哲学思考。
+        </p>
+        <p class="hero-bio lang-en">
+          My doctoral research focuses on Hegel's philosophy, exploring the relation between
+          his <em>Logik</em> and <em>Realphilosophie</em>, and attempts to renew Hegelian
+          thinking in dialogue with foundational concepts of contemporary science.
+        </p>
+        <div class="hero-actions">
+          <a href="#research" class="btn btn-primary">
+            <span class="lang-cn">查看研究</span>
+            <span class="lang-en">My Research</span>
+          </a>
+          <a href="cv.pdf" class="btn btn-ghost" target="_blank">
+            CV ↗
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span class="lang-cn">向下滚动</span>
+      <span class="lang-en">Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <span class="lang-cn">关于我</span>
+          <span class="lang-en">About</span>
+        </span>
+        <h2 class="section-title">
+          <span class="lang-cn">个人简介</span>
+          <span class="lang-en">Profile</span>
+        </h2>
+      </div>
+
+      <div class="about-grid">
+        <!-- ── BIO TEXT ── -->
+        <div class="about-text">
+          <!-- 中文简介 -->
+          <div class="lang-cn">
+            <p>
+              我是斯图加特大学与雅典大学哲学系的联合博士候选人，研究黑格尔哲学，
+              尤其关注其逻辑学与实在哲学（自然哲学）之间的关系，并尝试结合当代科学
+              基础概念（如"力""场""概率"）来更新黑格尔式哲学。
+            </p>
+            <p>
+              此前，我在牛津大学获得哲学硕士学位（BPhil → MSt），
+              在北京大学获得哲学学士学位。
+            </p>
+            <p>
+              我也对胡塞尔现象学、人工智能哲学、语言哲学与传统中国哲学抱有浓厚兴趣，
+              欢迎一切相关学术交流。
+            </p>
+          </div>
+          <!-- English bio -->
+          <div class="lang-en">
+            <p>
+              I am a joint (cotutelle) PhD candidate in philosophy at the University of Stuttgart
+              and the University of Athens. My research focuses on Hegel's philosophy,
+              particularly the relation between his <em>Logik</em> and
+              <em>Realphilosophie</em> (especially <em>Naturphilosophie</em>), and
+              attempts to renew Hegelian philosophy through introducing
+              foundational concepts of contemporary science (e.g. "force", "field", "probability", etc.).
+            </p>
+            <p>
+              Previously, I received an MSt in Philosophy from the University of Oxford
+              and a BA in Philosophy from Peking University.
+            </p>
+            <p>
+              I am also deeply interested in Husserlian phenomenology, philosophy of AI,
+              philosophy of language, and traditional Chinese philosophy. All academic inquiries are warmly welcome.
+            </p>
+          </div>
+
+          <!-- CV link -->
+          <div class="cv-link-wrap">
+            <a href="cv.pdf" class="cv-link" target="_blank">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+              </svg>
+              <span class="lang-cn">下载 CV</span>
+              <span class="lang-en">Download CV</span>
+              <span class="cv-arrow">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- ── SIDEBAR CARDS ── -->
+        <div class="about-sidebar">
+          <!-- Education -->
+          <div class="info-card">
+            <h3 class="info-card-title">
+              <span class="lang-cn">教育背景</span>
+              <span class="lang-en">Education</span>
+            </h3>
+            <ul class="info-list">
+              <li>
+                <span class="info-year">2026–</span>
+                <span>
+                  <span class="lang-cn">哲学博士候选人，斯图加特大学 &amp; 雅典大学</span>
+                  <span class="lang-en">PhD Candidate in Philosophy, University of Stuttgart &amp; University of Athens</span>
+                </span>
+              </li>
+              <li>
+                <span class="info-year">2023–25</span>
+                <span>
+                  <span class="lang-cn">哲学硕士（BPhil → MSt），牛津大学</span>
+                  <span class="lang-en">MSt in Philosophy (BPhil → MSt), University of Oxford</span>
+                </span>
+              </li>
+              <li>
+                <span class="info-year">2019–23</span>
+                <span>
+                  <span class="lang-cn">哲学学士，北京大学</span>
+                  <span class="lang-en">BA in Philosophy, Peking University</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Research Fields -->
+          <div class="info-card">
+            <h3 class="info-card-title">
+              <span class="lang-cn">研究领域</span>
+              <span class="lang-en">Research Areas</span>
+            </h3>
+            <div class="tags lang-cn">
+              <span class="tag">黑格尔</span>
+              <span class="tag">德国古典哲学</span>
+              <span class="tag">胡塞尔现象学</span>
+              <span class="tag">人工智能哲学</span>
+              <span class="tag">心灵哲学</span>
+              <span class="tag">语言哲学</span>
+              <span class="tag">形而上学与知识论</span>
+            </div>
+            <div class="tags lang-en">
+              <span class="tag">Hegel</span>
+              <span class="tag">German Idealism</span>
+              <span class="tag">Husserlian Phenomenology</span>
+              <span class="tag">Philosophy of AI</span>
+              <span class="tag">Philosophy of Mind</span>
+              <span class="tag">Philosophy of Language</span>
+              <span class="tag">Metaphysics &amp; Epistemology</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CURRENT RESEARCH ===== -->
+  <section id="research" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <span class="lang-cn">当前研究</span>
+          <span class="lang-en">Current Research</span>
+        </span>
+        <h2 class="section-title">
+          <span class="lang-cn">博士研究</span>
+          <span class="lang-en">Doctoral Research</span>
+        </h2>
+      </div>
+
+      <div class="research-text-block" data-aos>
+        <p class="research-proposal-label">Research Proposal</p>
+        <p class="research-description lang-cn">
+          讨论黑格尔的逻辑学、实在哲学尤其是自然哲学的关系，试图结合当代科学基础概念
+          （如"力""场""概率"）来更新黑格尔式哲学。
+        </p>
+        <p class="research-description lang-en">
+          My doctoral research is proposed to study the relation between Hegel's
+          <em>Logik</em> and <em>Realphilosophie</em> (esp. <em>Naturphilosophie</em>).
+          I attempt to combine cutting-edge foundational scientific concepts
+          (like "force", "field", "probability") to renew <em>the</em> philosophy under Hegel's spirit.
+        </p>
+        <p class="research-note lang-cn">· 可邮件联系我来获取</p>
+        <p class="research-note lang-en">· The research proposal can be accessed by emailing me.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PUBLICATIONS ===== -->
+  <section id="publications" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <span class="lang-cn">学术成果</span>
+          <span class="lang-en">Academic Output</span>
+        </span>
+        <h2 class="section-title">
+          <span class="lang-cn">论著选编</span>
+          <span class="lang-en">Publications</span>
+        </h2>
+      </div>
+      <p class="empty-placeholder lang-cn">（即将更新）</p>
+      <p class="empty-placeholder lang-en">(Coming soon)</p>
+    </div>
+  </section>
+
+  <!-- ===== TEACHING ===== -->
+  <section id="teaching" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <span class="lang-cn">教学</span>
+          <span class="lang-en">Teaching</span>
+        </span>
+        <h2 class="section-title">
+          <span class="lang-cn">授课课程</span>
+          <span class="lang-en">Courses</span>
+        </h2>
+      </div>
+      <p class="empty-placeholder lang-cn">（即将更新）</p>
+      <p class="empty-placeholder lang-en">(Coming soon)</p>
+    </div>
+  </section>
+
+  <!-- ===== PRESENTATIONS ===== -->
+  <section id="presentations" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <span class="lang-cn">学术报告</span>
+          <span class="lang-en">Presentations</span>
+        </span>
+        <h2 class="section-title">
+          <span class="lang-cn">学术报告</span>
+          <span class="lang-en">Presentations</span>
+        </h2>
+      </div>
+      <p class="empty-placeholder lang-cn">（即将更新）</p>
+      <p class="empty-placeholder lang-en">(Coming soon)</p>
+    </div>
+  </section>
+
+  <!-- ===== ESSAYS (中文版专属) ===== -->
+  <section id="essays" class="section section-alt cn-only">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">写作</span>
+        <h2 class="section-title">生活随笔</h2>
+      </div>
+      <div class="essays-block" data-aos>
+        <ul class="essays-list">
+          <li class="essays-item">
+            <span class="essays-num">01</span>
+            <div class="essays-content">
+              <p>
+                关注微信公众号
+                <strong class="accent-text">「王朗夜读」</strong>
+                ——我的笔名：<strong>朗明明 / Ming</strong>
+              </p>
+            </div>
+          </li>
+          <li class="essays-item">
+            <span class="essays-num">02</span>
+            <div class="essays-content">
+              <p>
+                或直接
+                <a href="mailto:ml.1701635@gmail.com" class="inline-link">邮件我</a>
+                来取得联系。
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <span class="lang-cn">联系方式</span>
+          <span class="lang-en">Contact</span>
+        </span>
+        <h2 class="section-title">
+          <span class="lang-cn">联系我</span>
+          <span class="lang-en">Get in Touch</span>
+        </h2>
+      </div>
+      <div class="contact-card-simple" data-aos>
+        <p class="contact-intro lang-cn">
+          欢迎就学术问题、合作邀请或一般咨询联系我。
+        </p>
+        <p class="contact-intro lang-en">
+          Feel free to reach out for academic inquiries, collaboration, or general correspondence.
+        </p>
+        <div class="contact-email-large">
+          <span class="contact-icon-large">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </span>
+          <a href="mailto:ml.1701635@gmail.com" class="email-text">ml.1701635@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-name">
+        <span class="lang-cn">明朗 Lang Ming</span>
+        <span class="lang-en">Lang Ming 明朗</span>
+      </p>
+      <p class="footer-copy">©</p>
+      <p class="footer-quote lang-cn">
+        「哲学的圆心无处不在，圆周却处处在」<br>
+        <span class="footer-attr">— 莫里斯·梅洛-庞蒂 / 赫尔墨斯·崔斯墨图</span>
+      </p>
+      <p class="footer-quote lang-en">
+        "Philosophy's center is everywhere and circumference nowhere."<br>
+        <span class="footer-attr">— Maurice Merleau-Ponty / Hermes Trismegistus</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
