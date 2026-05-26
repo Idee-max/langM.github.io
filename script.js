@@ -134,8 +134,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   animatedEls.forEach(el => observer.observe(el));
 
-  // Failsafe: force visible after 2.5s
-  setTimeout(() => animatedEls.forEach(el => el.classList.add('visible')), 2500);
+  // Failsafe: force visible after 3.5s
+  setTimeout(() => animatedEls.forEach(el => el.classList.add('visible')), 3500);
 
 
   /* ══════════════════════════════════════════════════
@@ -150,17 +150,17 @@ document.addEventListener('DOMContentLoaded', () => {
   ].map(sel => document.querySelector(sel)).filter(Boolean);
 
   heroEls.forEach((el, i) => {
-    el.style.cssText += 'opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease;';
+    el.style.cssText += 'opacity:0;transform:translateY(18px);transition:opacity .9s cubic-bezier(0.22,1,0.36,1),transform .9s cubic-bezier(0.22,1,0.36,1);';
     setTimeout(() => {
       el.style.opacity   = '1';
       el.style.transform = 'translateY(0)';
-    }, 200 + i * 120);
+    }, 300 + i * 150);
   });
 
   const photoWrap = document.querySelector('.hero-photo-wrap');
   if (photoWrap) {
-    photoWrap.style.cssText += 'opacity:0;transition:opacity .9s ease;';
-    setTimeout(() => { photoWrap.style.opacity = '1'; }, 150);
+    photoWrap.style.cssText += 'opacity:0;transition:opacity 1.2s ease;';
+    setTimeout(() => { photoWrap.style.opacity = '1'; }, 200);
   }
 
 
